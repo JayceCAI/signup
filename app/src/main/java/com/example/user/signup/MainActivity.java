@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
             aa=ran.length();
         }
-        etEmail.setText(ran);
         Toast.makeText(this, "Signing up...", Toast.LENGTH_SHORT).show();
         new SignupActivity(this).execute(fullName, userName, passWord, phoneNumber, emailAddress,ran);
     }
